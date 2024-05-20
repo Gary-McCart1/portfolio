@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "Resources/style.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100..900&family=Lobster&family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100..900&family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Banner-->
+    <header>
+        <nav class = "navbar"></nav>
+        <div class = "nav">
+            <a><h3>Gary McCart</h3></a>
+            <ul>
+                <li class = "navRight"><a>Projects</a></li>
+                <li class = "navRight"><a>Skills</a></li>
+                <li class = "navRight"><a id = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class = "aboutMe">
+            <div class = "about">
+                <img class = "coder" src = "Resources/images/053473f74a104f6fbce948ccae40af01.webp" alt ="Space Coder">
+                <div class = "aboutText">
+                    <h1>About Me</h1>
+                    <p>Hey! I am a full-stack web developer. I am a Baylor Graduate with degrees in Entrepreneurship and Marketing. I have a passion for E-Commerce, digital marketing, and buidling online funnels.</p>
+                    <span>I have been coding for </span><span id='time-container'> </span>
+                    <span>seconds!</span>
+                </div>
+            </div>
+            </div>
+            <h2> My stack of technologies:</h2>
+        </section>
+        <grid class = "techGrid">
+            <div class = "gridItem">HTML</div>
+            <div class = "gridItem">CSS</div>
+            <div class = "gridItem">JavaScript</div>
+            <div class = "gridItem">Git</div>
+            <div class = "gridItem">Github</div>
+        </grid>
+        <h2>Projects</h2>
+        <section class = "projects">
+            <div class = "card">
+                <div class = "container">
+                    <p class = "projectTitle"><b>Alien Project</b></p>
+                    <div class = "buttonHolder">
+                        <button class = "projectButton">Live Project</button>
+                        <button class = "projectButton">View Code</button>
+                    </div>
+                    <p class = "projectDescription">Project with Aliens</p>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "container">
+                    <p class = "projectTitle"><b>Alien Project</b></p>
+                    <div class = "buttonHolder">
+                        <button class = "projectButton">Live Project</button>
+                        <button class = "projectButton">View Code</button>
+                    </div>
+                    <p class = "projectDescription">Project with Aliens</p>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "container">
+                    <p class = "projectTitle"><b>Alien Project</b></p>
+                    <div class = "buttonHolder">
+                        <button class = "projectButton">Live Project</button>
+                        <button class = "projectButton">View Code</button>
+                    </div>
+                    <p class = "projectDescription">Project with Aliens</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id = "#contact">
+        <section class = "footer">
+            <p class = "contactHead">Contact Info</p>
+            <div class = inContact>
+                <p class = "contact">Email: gwmccart3@gmail.com</p>
+                <p class = "contact">Phone Number: 919-818-1804</p>
+            </div>
+        </section>
+    </footer>
+</body>
+<script> 
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "09-10-2020";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+</script>
+</html>
