@@ -1,12 +1,23 @@
+.page{
+  z-index: 5
+}
 .tech-stack {
   display: flex;
   width: 60%;
+  border: 1px solid white;
   align-items: center;
   flex-wrap: wrap;
   margin-left: -10px;
 
   @media (max-width: 1500px) {
     width: 100%;
+  }
+
+  @media(max-width: 560px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-left: 0;
   }
 }
 
@@ -29,6 +40,12 @@
   margin: 10px;
   margin-bottom: 0;
   border-radius: 20%;
+
+  @media (max-width: 560px){
+    width: 65px;
+    height: 65px;
+    padding-top: 12px
+  }
 }
 
 .tech-box {
@@ -166,13 +183,13 @@ h2 {
   .portfolio-page {
     display: flex !important;
     flex-direction: column;
-    width: 80% !important;
+    width: 100% !important;
     overflow-y: visible !important;
     height: fit-content !important;
   }
 
   .project-zone {
-    width: 80%;
+    width: 100%;
     margin-top: 5rem !important; // Reduce excessive margin
   }
 
@@ -206,5 +223,15 @@ h2 {
   .project-list {
     height: 2300px !important;
     overflow-y: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-zone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: center;
   }
 }
