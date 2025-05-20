@@ -1,15 +1,18 @@
 .small {
   display: none; /* Hidden by default */
   margin: 0;
+  @media (max-width: 1200px) {
+    margin-top: -15rem !important;
+  }
 }
 
 @media (max-width: 1200px) {
-    .small{
-        display: block;
-        width: 20rem;
-        margin: 0;
-    }
+  .small {
+    display: block;
+    width: 20rem;
+    margin: 0;
   }
+}
 
 .home-page {
   margin: auto;
@@ -20,7 +23,6 @@
   height: 100%;
 
   @media (max-width: 1200px) {
-    border: 1px solid white;
     height: 100%;
     flex-direction: column;
     align-items: center !important;
@@ -41,7 +43,7 @@
 
   @media (max-width: 1200px) {
     display: block;
-    margin-top: 10rem; /* Adjust the top margin to better position the text */
+    margin-top: 30rem; /* Adjust the top margin to better position the text */
   }
 
   h1 {
@@ -151,32 +153,31 @@
 }
 
 @media (max-width: 572px) {
-    .text-zone{
-        margin-top: 50rem !important;
+  .text-zone {
+    margin-top: 50rem !important;
 
-        h1{
-            font-size: 26px !important;
-        }
-
-        h2{
-            font-size: 18px !important;
-        }
+    h1 {
+      font-size: 26px !important;
     }
 
-
-    .role {
-        display: flex;
-        justify-content: center;
-        text-align: center !important;
-      }
-    .buttons{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 !important;
+    h2 {
+      font-size: 18px !important;
     }
+  }
 
-    .dark-button{
-        margin-left: 0 !important;
-    }
+  .role {
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+
+  .dark-button {
+    margin-left: 0 !important;
+  }
 }
