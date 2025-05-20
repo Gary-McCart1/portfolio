@@ -129,6 +129,7 @@
   }
 
   .contact-text {
+    width: 100%;
     margin: auto !important;
     display: flex;
     justify-content: center !important;
@@ -157,5 +158,6 @@
     overflow-x: hidden; // Prevents horizontal overflow
     display: flex;
     flex-direction: column;
+    z-index: 5;
   }
 }

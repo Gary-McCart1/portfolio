@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="page">
+    <div className="contactme-page">
       <div className="container contact-page">
         <div className="contact-text">
           {/* <div className="info-map">
