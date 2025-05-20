@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
-        <div className="text-zone">
+        <div className="home-text">
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i</span>

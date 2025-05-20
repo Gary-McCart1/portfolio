@@ -12,7 +12,6 @@
   }
 
 .home-page {
-  border: 1px white solid;
   margin: auto;
   width: 80%;
   display: flex;
@@ -21,15 +20,16 @@
   height: 100%;
 
   @media (max-width: 1200px) {
-    height: 80%;
+    border: 1px solid white;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    align-items: center !important;
     text-align: center;
     padding: 0 5%;
   }
 }
 
-.text-zone {
+.home-text {
   margin-top: 30rem;
   margin-bottom: 0;
   display: inline-block;
@@ -41,7 +41,7 @@
 
   @media (max-width: 1200px) {
     display: block;
-    margin-top: 20rem; /* Adjust the top margin to better position the text */
+    margin-top: 10rem; /* Adjust the top margin to better position the text */
   }
 
   h1 {
