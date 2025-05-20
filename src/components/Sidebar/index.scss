@@ -125,3 +125,33 @@ ul {
         }
     }
 }
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+// Mobile Styles
+@media (max-width: 1000px) {
+    .nav-bar {
+        width: 250px;
+        transform: translateX(-100%);
+        position: fixed;
+        height: 100vh;
+    }
+
+    .nav-bar.open {
+        transform: translateX(0);
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}

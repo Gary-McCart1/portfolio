@@ -33,19 +33,19 @@ const Home = () => {
   }, [])
 
   const handleDownload = () => {
-    const pdfUrl = "/resume.pdf";
-  
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "Gary_McCart_Resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const pdfUrl = '/resume.pdf'
+
+    const link = document.createElement('a')
+    link.href = pdfUrl
+    link.setAttribute('download', 'Gary_McCart_Resume.pdf')
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <>
-      <div className="container home-page">
+      <div className="home-page">
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -66,17 +66,26 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Python / Fullstack Developer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-          <div>
-            <button className="dark-button" onClick={handleDownload}>
-              Download Resume
-            </button>
+          <div className="subtitle">
+            <h2 className="role">Python / Fullstack Developer</h2>
+            <div className="buttons">
+              <div>
+                <Link to="/contact" className="flat-button">
+                  CONTACT ME
+                </Link>
+              </div>
+              <div>
+                <button className="dark-button" onClick={handleDownload}>
+                  Download Resume
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <Logo />
+        <img className="small" src="/G-light.png" alt="logo" />
+        <div id="logo-container">
+          <Logo />
+        </div>
       </div>
       <Loader type="pacman" />
     </>

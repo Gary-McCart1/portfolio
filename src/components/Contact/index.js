@@ -14,7 +14,7 @@ const Contact = () => {
     const timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
-  
+
     return () => clearTimeout(timeoutId)
   }, [])
 
@@ -22,7 +22,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_an1kzdc', 'template_a0huevp', refForm.current, 'K8CgCMwHuRPmC8lLW')
+      .sendForm(
+        'service_an1kzdc',
+        'template_a0huevp',
+        refForm.current,
+        'K8CgCMwHuRPmC8lLW'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -35,57 +40,10 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <div className="page">
       <div className="container contact-page">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-            I am interested in full-time work opportunities. However, if you have any other requests or
-            questions, don't hesitate to contact me using the form below.
-          </p>
-          <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
-          </div>
-        </div>
-        <div className='info-map'>
+        <div className="contact-text">
+          {/* <div className="info-map">
             Gary McCart,
             <br />
             Judd Parkway
@@ -94,18 +52,61 @@ const Contact = () => {
             USA
             <br />
             <span>gwmccart3@gmail.com</span>
+          </div> */}
+          <div className="heading-text">
+            <div className="text">
+              <h1>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
+                  idx={15}
+                />
+              </h1>
+            </div>
+            <div className="text">
+              <p>
+                I am interested in full-time work opportunities. However, if you
+                have any other requests or questions, don't hesitate to contact
+                me using the form below.
+              </p>
+            </div>
+          </div>
+          <div className="contact-form">
+            <form ref={refForm} onSubmit={sendEmail}>
+              <div className="form-group">
+                <input placeholder="Name" type="text" name="name" required />
+                <input placeholder="Email" type="email" name="email" required />
+              </div>
+              <input
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                required
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+              <button type="submit" className="flat-button">
+                SEND
+              </button>
+            </form>
+          </div>
         </div>
-        <div className='map-wrap'>
+        <div className="map">
+          <div className="map-wrap">
             <MapContainer center={[35.59343, -78.7787]} zoom={10}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[35.59343, -78.7787]}>
-              <Popup>Gary lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[35.59343, -78.7787]}>
+                <Popup>Gary lives here, come over for a cup of coffee :)</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
 

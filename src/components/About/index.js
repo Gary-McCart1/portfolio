@@ -25,37 +25,39 @@ const About = () => {
   }, [])
 
   return (
-    <>
+    <div className="page">
       <div className="container about-page">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-            I'm a passionate Full Stack Developer with a strong focus on Python,
-            Django, and React, eager to join a dynamic team that thrives on
-            solving complex problems and delivering impactful solutions.
-          </p>
-          <p align="LEFT">
-            With a problem-solving mindset and an eye for detail, I’m
-            continually honing my skills—whether it's optimizing back-end
-            systems, building seamless user interfaces, or tackling intricate
-            design challenges.
-          </p>
-          <p>
-            Outside of coding, I’m a big Duke basketball fan, a movie
-            enthusiast, and I am always seeking new perspectives on life and
-            technology.
-          </p>
-          <Link to="/projects" className="flat-button">
-            View My Projects
-          </Link>
+        <div className="about-zone">
+          <div className="about-text">
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                idx={15}
+              />
+            </h1>
+            <p>
+              I'm a passionate Full Stack Developer with a strong focus on
+              Python, Django, and React, eager to join a dynamic team that
+              thrives on solving complex problems and delivering impactful
+              solutions.
+            </p>
+            <p align="LEFT">
+              With a problem-solving mindset and an eye for detail, I’m
+              continually honing my skills—whether it's optimizing back-end
+              systems, building seamless user interfaces, or tackling intricate
+              design challenges.
+            </p>
+            <p>
+              Outside of coding, I’m a big Duke basketball fan, a movie
+              enthusiast, and I am always seeking new perspectives on life and
+              technology.
+            </p>
+            <Link to="/projects" className="flat-button">
+              View My Projects
+            </Link>
+          </div>
         </div>
-
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
@@ -77,10 +79,13 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
+          <div className="underneath">
+            
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
 
