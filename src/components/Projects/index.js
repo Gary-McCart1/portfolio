@@ -14,7 +14,7 @@ const Projects = () => {
     return () => clearTimeout(timeoutId) // Proper cleanup
   }, [])
   return (
-    <div className="page">
+    <div className="project-page">
       <div className="container portfolio-page">
         <div className="project-zone">
           <h1>
@@ -272,14 +272,14 @@ const Projects = () => {
                   Fully functional admin dashboard for managing an e-commerce
                   platform. Built with Next.js.
                 </p>
-                <div className="buttons">
+                <div className="project-card-buttons">
                   <a
                     href="https://github.com/Gary-McCart1/ecom-dashboard"
-                    className="btn"
+                    className="link-buttons"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/lcQKj0U0KVM" className="btn">
+                  <a href="https://youtu.be/lcQKj0U0KVM" className="link-buttons">
                     Live Demo
                   </a>
                 </div>
@@ -305,14 +305,14 @@ const Projects = () => {
                   Customer-facing frontend for a full-featured e-commerce
                   application. Built with Next.js.
                 </p>
-                <div className="buttons">
+                <div className="project-card-buttons">
                   <a
                     href="https://github.com/Gary-McCart1/ecom-storefront-foamhead"
-                    className="btn"
+                    className="link-buttons"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/zR68VCaqn-8" className="btn">
+                  <a href="https://youtu.be/zR68VCaqn-8" className="link-buttons">
                     Live Demo
                   </a>
                 </div>
@@ -339,14 +339,14 @@ const Projects = () => {
                   built using Django REST Framework (DRF) and POSTGRES. View
                   Github for endpoints.
                 </p>
-                <div className="buttons">
+                <div className="project-card-buttons">
                   <a
                     href="https://github.com/Gary-McCart1/ecom-backend"
-                    className="btn"
+                    className="link-buttons"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/WErxf3E5_MM" className="btn">
+                  <a href="https://youtu.be/WErxf3E5_MM" className="link-buttons">
                     Live Demo
                   </a>
                 </div>

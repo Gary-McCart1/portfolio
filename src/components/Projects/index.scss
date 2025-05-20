@@ -1,6 +1,35 @@
-.page{
-  z-index: 5
+.project-page {
+  width: 100%;
+  margin-left: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
+
+@media (max-width: 1000px) {
+  .project-page {
+    margin-left: 0;
+    z-index: 5;
+  }
+}
+
+.link-buttons{
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.project-card-buttons{
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
 .tech-stack {
   display: flex;
   width: 60%;
@@ -56,9 +85,13 @@
 }
 
 .projects-wrap {
-  width: 70%;
-  height: 100vh; // Set height to fit content, or you can set a specific height
-  background-color: rgb(63, 63, 63);
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  width: 80%;
+  height: 100%; // Set height to fit content, or you can set a specific height
+  background-color: rgb(63, 63, 63) ;
   border-radius: 5px;
   overflow-y: auto; // Enables vertical scrolling
 
@@ -80,11 +113,21 @@
   &::-webkit-scrollbar-button {
     display: none; // Hides the buttons (top and bottom) on the scrollbar
   }
+
+  @media (max-width: 560px) {
+    h1{
+      text-align: center !important;
+    }
+    padding: 0;
+    
+  }
 }
 
 .project-title {
+  width: 100%;
   text-align: left;
-  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-size: 100px !important;
   color: #ffd700;
 }
@@ -195,13 +238,13 @@ h2 {
   .projects-wrap {
     width: 100%;
     margin-top: 5rem;
-    height: 1200px;
+    // height: 1200px;
     z-index: 99999;
     overflow-y: auto !important;
   }
 
   .project-list {
-    height: 2000px !important;
+    // height: 2000px !important;
     overflow-y: auto !important;
   }
 
@@ -220,7 +263,7 @@ h2 {
     font-size: 45px !important;
   }
   .project-list {
-    height: 2300px !important;
+    // height: 2300px !important;
     overflow-y: auto !important;
   }
 }
