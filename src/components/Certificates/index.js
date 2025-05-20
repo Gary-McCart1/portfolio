@@ -64,7 +64,7 @@ const Certificates = () => {
             <img className="cert-image" src="/codecademy-java.png" alt="CS50 Website Development" />
           </div>
           <div className="cert-card">
-            <img className="cert-image" src="/CS50X.png" alt="CS50 Website Development" />
+            <img className="cert-image" src="/CS50x.png" alt="CS50 Website Development" />
           </div>
         </div>
       </div>
