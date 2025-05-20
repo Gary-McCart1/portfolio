@@ -94,6 +94,11 @@ nav {
             content: 'PROJECTS';
         }
     }
+    a.certificates-link {
+        &:after {
+            content: 'CERTIFICATES';
+        }
+    }
 
     a.active {
         svg {

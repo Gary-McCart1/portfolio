@@ -5,6 +5,7 @@ import glight from "../../assets/images/G-light.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faBolt, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faClipboard } from '@fortawesome/free-solid-svg-icons/faClipboard';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,9 @@ const Sidebar = () => {
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" onClick={() => setIsOpen(false)}>
                         <FontAwesomeIcon icon={faBolt} color="#4d4d4e"/>
+                    </NavLink>
+                    <NavLink exact="true" activeclassname="active" className="certificates-link" to="/certificates" onClick={() => setIsOpen(false)}>
+                        <FontAwesomeIcon icon={faClipboard} color="#4d4d4e"/>
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setIsOpen(false)}>
                         <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
