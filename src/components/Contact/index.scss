@@ -1,8 +1,12 @@
 
 .heading-text {
-  margin-top: auto; // Pushes it to the bottom
+  margin-top: 20rem; // Pushes it to the bottom
   padding: 10px;
   text-align: left;
+
+  @media (max-width: 1000px) {
+    margin-top: 10rem;
+  }
 }
 
 .contact-form {
