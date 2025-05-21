@@ -283,8 +283,12 @@ const Projects = () => {
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/lcQKj0U0KVM" className="link-buttons" target="_blank"
-                    rel="noreferrer">
+                  <a
+                    href="https://youtu.be/lcQKj0U0KVM"
+                    className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 </div>
@@ -321,8 +325,12 @@ const Projects = () => {
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/zR68VCaqn-8" className="link-buttons" target="_blank"
-                    rel="noreferrer">
+                  <a
+                    href="https://youtu.be/zR68VCaqn-8"
+                    className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 </div>
@@ -360,9 +368,45 @@ const Projects = () => {
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/WErxf3E5_MM" className="link-buttons" target="_blank"
-                    rel="noreferrer">
+                  <a
+                    href="https://youtu.be/WErxf3E5_MM"
+                    className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="project-card">
+              <img src="/podcast.png" alt="" className="project-image" />
+              <div>
+                <div className="project-heading">
+                  <h5 class="p-title">Founders In Focus Podcast Website</h5>
+                  <a
+                    href="https://foamhead-a8f24bda0c5b.herokuapp.com/"
+                    className="visit"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Visit &rarr;
+                  </a>
+                </div>
+                <p class="p-desc">
+                  Built a responsive, mobile-friendly website for the Founders
+                  in Focus podcast using Flask and HTML/CSS, featuring an
+                  attractive UI and links to episodes on Apple Podcasts,
+                  Spotify, and YouTube.
+                </p>
+                <div className="project-card-buttons">
+                  <a
+                    href="https://github.com/Gary-McCart1/podcast"
+                    className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
                   </a>
                 </div>
               </div>
