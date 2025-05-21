@@ -264,6 +264,8 @@ const Projects = () => {
                   <a
                     className="visit"
                     href="https://ecom-dashboard-pi.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Visit &rarr;
                   </a>
@@ -276,10 +278,13 @@ const Projects = () => {
                   <a
                     href="https://github.com/Gary-McCart1/ecom-dashboard"
                     className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/lcQKj0U0KVM" className="link-buttons">
+                  <a href="https://youtu.be/lcQKj0U0KVM" className="link-buttons" target="_blank"
+                    rel="noreferrer">
                     Live Demo
                   </a>
                 </div>
@@ -297,6 +302,8 @@ const Projects = () => {
                   <a
                     className="visit"
                     href="https://ecom-storefront-foamhead.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Visit &rarr;
                   </a>
@@ -309,10 +316,13 @@ const Projects = () => {
                   <a
                     href="https://github.com/Gary-McCart1/ecom-storefront-foamhead"
                     className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/zR68VCaqn-8" className="link-buttons">
+                  <a href="https://youtu.be/zR68VCaqn-8" className="link-buttons" target="_blank"
+                    rel="noreferrer">
                     Live Demo
                   </a>
                 </div>
@@ -330,6 +340,8 @@ const Projects = () => {
                   <a
                     href="https://foamhead-a8f24bda0c5b.herokuapp.com/"
                     className="visit"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Visit &rarr;
                   </a>
@@ -343,10 +355,13 @@ const Projects = () => {
                   <a
                     href="https://github.com/Gary-McCart1/ecom-backend"
                     className="link-buttons"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Github
                   </a>
-                  <a href="https://youtu.be/WErxf3E5_MM" className="link-buttons">
+                  <a href="https://youtu.be/WErxf3E5_MM" className="link-buttons" target="_blank"
+                    rel="noreferrer">
                     Live Demo
                   </a>
                 </div>
