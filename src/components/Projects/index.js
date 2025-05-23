@@ -385,7 +385,7 @@ const Projects = () => {
                 <div className="project-heading">
                   <h5 class="p-title">Founders In Focus Podcast Website</h5>
                   <a
-                    href="https://foamhead-a8f24bda0c5b.herokuapp.com/"
+                    href="https://www.foundersinfocuspodcast.com/"
                     className="visit"
                     target="_blank"
                     rel="noreferrer"
