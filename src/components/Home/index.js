@@ -67,7 +67,7 @@ const Home = () => {
             />
           </h1>
           <div className="subtitle">
-            <h2 className="role">Python / Fullstack Developer</h2>
+            <h2 className="role">Fullstack Developer</h2>
             <div className="buttons">
               <div>
                 <Link to="/contact" className="flat-button">

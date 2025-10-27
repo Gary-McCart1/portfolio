@@ -39,6 +39,9 @@ const Certificates = () => {
       </div>
       <div className="certs-list">
         <div className="certs-wrap">
+        <div className="cert-card">
+            <img className="cert-image" src="/aws-ccp.png" alt="CS50 Website Development" />
+          </div>
           <div className="cert-card">
             <img className="cert-image" src="/CS50W.png" alt="CS50 Website Development" />
           </div>
