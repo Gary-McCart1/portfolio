@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import {
-  faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
   faPython,
   faReact,
+  faJava
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -37,10 +37,11 @@ const About = () => {
               />
             </h1>
             <p>
-              I'm a passionate Full Stack Developer with a strong focus on
-              Python, Django, and React, eager to join a dynamic team that
-              thrives on solving complex problems and delivering impactful
-              solutions.
+              I'm a passionate Full Stack Developer skilled in React, Next.js,
+              Django, Spring Boot, and AWS, with a strong foundation in Python
+              and Java. I'm eager to join a dynamic team that thrives on
+              building scalable, impactful solutions and tackling complex
+              technical challenges.
             </p>
             <p align="LEFT">
               With a problem-solving mindset and an eye for detail, I’m
@@ -67,7 +68,8 @@ const About = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              {/* <FontAwesomeIcon icon={faCss3} color="#28A4D9" /> */}
+              <FontAwesomeIcon icon={faJava} color="#28A4D9" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
@@ -79,9 +81,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
-          <div className="underneath">
-            
-          </div>
+          <div className="underneath"></div>
         </div>
       </div>
       <Loader type="pacman" />
